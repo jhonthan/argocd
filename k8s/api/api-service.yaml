@@ -5,7 +5,8 @@ metadata:
 spec:
   selector:
     app: api
+  replicas: 2
   ports:
   - port: 80
     targetPort: 80
-  type: LoadBalancer
+  type: ClusterIP
